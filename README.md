@@ -1,2 +1,5 @@
-# threejsvscode
-three.js  vscode  demo 
+# three.js-Demo
+
+three.js
+npm run build
+npm run dev
