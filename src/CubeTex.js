@@ -34,9 +34,9 @@ export default class CubeTex extends AppProcess {
         //添加一个立方体
         let cubeGeometry = new THREE.BoxGeometry(20, 20, 20);
         let cubeMaterial = new THREE.MeshBasicMaterial({ map: texture });
-        let cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-        cube.position.set(10, 10, 10);
-        that.addChild(cube);
+        that.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+        that.cube.position.set(10, 10, 10);
+        that.addChild(that.cube);
       },
       // Function called when download progresses
       function(xhr) {
@@ -48,5 +48,10 @@ export default class CubeTex extends AppProcess {
       }
     );
   }
-  updateFrame() {}
+  updateFrame() {
+    if (this.cube) {
+      this.cube.rotation.x += 0.01;
+      this.cube.rotation.y += 0.01;
+    }
+  }
 }
