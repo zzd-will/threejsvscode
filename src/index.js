@@ -12,7 +12,8 @@ import CubeTex from "./CubeTex";
 
 function main() {
   // init();
-  let tr = new CubeTex();
+  // let tr = new CubeTex();
+  let triangle = new Triangle();
 }
 
 window.onload = main;

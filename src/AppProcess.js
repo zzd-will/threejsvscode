@@ -7,9 +7,10 @@ import * as THREE from "three";
 import OrbitControls from "three-orbitcontrols";
 export default class AppProcess {
   constructor() {
-    this.init();
+    this.initThree();
   }
-  init(params) {
+  init() {}
+  initThree(params) {
     //获得渲染区域DOM元素
     this.randerArea = document.getElementById("rander-area");
 
@@ -50,6 +51,7 @@ export default class AppProcess {
     this.render.render(this.scene, this.camera);
     window.addEventListener("resize", this.onWindowResize.bind(this), false);
     this.animate();
+    this.init();
     this.enterScene();
   }
   initControls() {

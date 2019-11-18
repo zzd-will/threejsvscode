@@ -29,7 +29,7 @@ export default class CubeTex extends AppProcess {
     var that = this;
 
     var err = loader.load(
-      "res/westore.png",
+      "res/tit.png",
       function(texture) {
         //添加一个立方体
         let cubeGeometry = new THREE.BoxGeometry(20, 20, 20);
