@@ -11,13 +11,15 @@ import CubeDemo from "./CubeDemo";
 import CubeTex from "./CubeTex";
 import Quad from "./Quad";
 import QuadTex from "./QuadTex";
+import Matrix from "./Matrix";
 
 function main() {
-  let cubeDemo = new CubeDemo();
+  // let cubeDemo = new CubeDemo();
   // let cubeTex = new CubeTex();
   // let triangle = new Triangle();
   // let quad = new Quad();
   // let quadTex = new QuadTex();
+  let matrix = new Matrix();
 }
 
 window.onload = main;

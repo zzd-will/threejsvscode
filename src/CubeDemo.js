@@ -29,6 +29,8 @@ export default class CubeDemo extends AppProcess {
     });
     let cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     cube.position.set(10, 10, 10);
+    // cube.translateX(20);
+    // cube.scale.x = 2.0;
     this.addChild(cube);
   }
   updateFrame() {}
