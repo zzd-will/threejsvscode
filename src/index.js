@@ -13,11 +13,11 @@ import Quad from "./Quad";
 import QuadTex from "./QuadTex";
 
 function main() {
-  // init();
+  let cubeDemo = new CubeDemo();
   // let cubeTex = new CubeTex();
   // let triangle = new Triangle();
   // let quad = new Quad();
-  let quadTex = new QuadTex();
+  // let quadTex = new QuadTex();
 }
 
 window.onload = main;

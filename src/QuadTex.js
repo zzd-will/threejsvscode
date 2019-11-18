@@ -21,7 +21,11 @@ export default class QuadTex extends AppProcess {
     this.tiangelGeometry.vertices = vertices;
     var faces = [new THREE.Face3(0, 1, 2), new THREE.Face3(1, 3, 2)];
     this.tiangelGeometry.faces = faces;
-
+    /**
+     *    01-------11
+     *
+     *    00-------10
+     */
     var t0 = new THREE.Vector2(0, 0);
     var t1 = new THREE.Vector2(1, 0);
     var t2 = new THREE.Vector2(1, 1);

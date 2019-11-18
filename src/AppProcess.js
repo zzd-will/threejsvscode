@@ -83,6 +83,7 @@ export default class AppProcess {
     let planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
     let planeMaterial = new THREE.MeshBasicMaterial({
       color: 0x7777ff
+      // wireframe: true
     });
     let plane = new THREE.Mesh(planeGeometry, planeMaterial);
     //设置平面角度

@@ -24,8 +24,8 @@ export default class CubeDemo extends AppProcess {
     //添加一个立方体
     let cubeGeometry = new THREE.BoxGeometry(10, 10, 10);
     let cubeMaterial = new THREE.MeshBasicMaterial({
-      color: 0x8fbc8f,
-      wireframe: true
+      color: 0x8fbc8f
+      // wireframe: true
     });
     let cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     cube.position.set(10, 10, 10);
