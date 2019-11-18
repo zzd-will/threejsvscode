@@ -1,11 +1,12 @@
 /**
- * Des:三角形渲染
+ * Des:四边形形渲染
  * Author:zedon
- * Date:2019-11-15
+ * Date:2019-11-18
  */
+
 import * as THREE from "three";
 import AppProcess from "./AppProcess";
-export default class Triangle extends AppProcess {
+export default class Quad extends AppProcess {
   constructor() {
     super();
   }
@@ -14,7 +15,8 @@ export default class Triangle extends AppProcess {
     var vertices = [
       new THREE.Vector3(0, 0, 0), //v0
       new THREE.Vector3(20, 0, 0), //v1
-      new THREE.Vector3(10, 20, 0) //v2
+      new THREE.Vector3(10, 20, 0), //v2
+      new THREE.Vector3(30, 20, 0) //v3
     ];
     this.tiangelGeometry.vertices = vertices;
 
@@ -25,7 +27,7 @@ export default class Triangle extends AppProcess {
     // ];
     // this.tiangelGeometry.colors = colors;
 
-    var faces = [new THREE.Face3(0, 1, 2)];
+    var faces = [new THREE.Face3(0, 1, 2), new THREE.Face3(1, 3, 2)];
     this.tiangelGeometry.faces = faces;
   }
   enterScene() {

@@ -9,11 +9,15 @@ import * as Block from "./Block";
 import Triangle from "./Triangle";
 import CubeDemo from "./CubeDemo";
 import CubeTex from "./CubeTex";
+import Quad from "./Quad";
+import QuadTex from "./QuadTex";
 
 function main() {
   // init();
-  // let tr = new CubeTex();
-  let triangle = new Triangle();
+  // let cubeTex = new CubeTex();
+  // let triangle = new Triangle();
+  // let quad = new Quad();
+  let quadTex = new QuadTex();
 }
 
 window.onload = main;

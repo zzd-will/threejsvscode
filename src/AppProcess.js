@@ -52,7 +52,9 @@ export default class AppProcess {
     window.addEventListener("resize", this.onWindowResize.bind(this), false);
     this.animate();
     this.init();
+    this.preEnterScene();
     this.enterScene();
+    this.endEnterScene();
   }
   initControls() {
     //配置轨道控制器
@@ -76,19 +78,21 @@ export default class AppProcess {
     this.updateFrame();
     this.render.render(this.scene, this.camera);
   }
-
-  enterScene() {
-    // //在底部添加一个平面
-    // let planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
-    // let planeMaterial = new THREE.MeshBasicMaterial({
-    //   color: 0x7777ff
-    // });
-    // let plane = new THREE.Mesh(planeGeometry, planeMaterial);
-    // //设置平面角度
-    // plane.rotation.x = -0.5 * Math.PI;
-    // plane.position.set(0, -1, 0);
-    // this.scene.add(plane);
+  preEnterScene() {
+    //在底部添加一个平面
+    let planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
+    let planeMaterial = new THREE.MeshBasicMaterial({
+      color: 0x7777ff
+    });
+    let plane = new THREE.Mesh(planeGeometry, planeMaterial);
+    //设置平面角度
+    plane.rotation.x = -0.5 * Math.PI;
+    plane.position.set(0, -1, 0);
+    this.addChild(plane);
   }
+  endEnterScene() {}
+
+  enterScene() {}
   updateFrame() {}
 
   //渲染物体

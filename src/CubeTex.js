@@ -13,17 +13,6 @@ export default class CubeTex extends AppProcess {
   enterScene() {
     console.log("enterScene");
 
-    //在底部添加一个平面
-    let planeGeometry = new THREE.PlaneGeometry(100, 100, 1, 1);
-    let planeMaterial = new THREE.MeshBasicMaterial({
-      color: 0x7777ff
-    });
-    let plane = new THREE.Mesh(planeGeometry, planeMaterial);
-    //设置平面角度
-    plane.rotation.x = -0.5 * Math.PI;
-    plane.position.set(0, -1, 0);
-    this.addChild(plane);
-
     var loader = new THREE.TextureLoader();
     // var texture = loader.load("res/0.png");
     var that = this;
