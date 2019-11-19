@@ -39,6 +39,7 @@ export default class AppProcess {
   initRender() {
     //创建WebGL渲染器
     this.render = new THREE.WebGLRenderer();
+    // this.render = new THREE.WebGLRenderer({ antialias: true });
     this.render.setClearColor(0xf0f0f0);
     this.render.setSize(
       this.randerArea.clientWidth,

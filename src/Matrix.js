@@ -25,7 +25,7 @@ export default class Matrix extends AppProcess {
     let cubeGeometry = new THREE.BoxGeometry(20, 20, 20);
     let cubeMaterial = new THREE.MeshBasicMaterial({ map: texture });
     that.cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    this.matrixTranslation(3);
+    // this.matrixTranslation(1);
     that.addChild(that.cube);
   }
   /**
